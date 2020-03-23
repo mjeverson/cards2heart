@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import Deck from './components/Deck';
+import './styles/App.scss';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+      <Deck/>
       </header>
     </div>
   );
