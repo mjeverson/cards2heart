@@ -4,7 +4,7 @@ import cardback from "../resources/cardback.png";
 class Deck extends Component {
     constructor(props) {
         super(props);
-        this.state = {isToggleOn: true};
+        // this.state = {isToggleOn: true};
 
         // This binding is necessary to make `this` work in the callback
         this.handleClick = this.handleClick.bind(this);
@@ -12,16 +12,16 @@ class Deck extends Component {
 
     handleClick(e) {
         console.log('The link was clicked.');
-        this.setState(state => ({
-            isToggleOn: !state.isToggleOn
-        }));
+        // this.setState(state => ({
+        //     isToggleOn: !state.isToggleOn
+        // }));
+        this.props.onDraw("DREW A CARD!");
     }
 
     render() {
         return (
-            <div>
+            <div className="Deck">
                 <img src={cardback} alt="cardback-component" onClick={this.handleClick}/>
-                {this.state.isToggleOn ? 'ON' : 'OFF'}
             </div>
         );
     }
