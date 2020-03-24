@@ -5,11 +5,12 @@ import Field from "./components/Field";
 function App() {
   return (
     <div className="App">
-      <body>
         <Field/>
-      </body>
     </div>
   );
 }
 
 export default App;
+
+//todo: flexbox for vertical pos?
+//todo: get text in a file and grab randomly

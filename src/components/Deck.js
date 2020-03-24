@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import cardback from "../resources/cardback.png";
+import cards from "../resources/cards";
 
 class Deck extends Component {
     constructor(props) {
@@ -10,12 +11,20 @@ class Deck extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+
     handleClick(e) {
-        console.log('The link was clicked.');
+        console.log('The link was clicked, selecting a card.');
         // this.setState(state => ({
         //     isToggleOn: !state.isToggleOn
         // }));
-        this.props.onDraw("DREW A CARD!");
+
+        let index = this.getRandomInt(cards.length);
+        let card = cards[index];
+
+        this.props.onDraw(card);
     }
 
     render() {

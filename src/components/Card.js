@@ -6,11 +6,18 @@ class Card extends Component {
     }
 
     render() {
-        const card = this.props.card;
+        let card;
+        let text;
+
+        if (this.props.card){
+            card = this.props.card.cardName;
+            text = this.props.card.text;
+        }
 
         return (
             <div className="Card">
-                {card}
+                {card}<br/>
+                {text}
             </div>
         );
     }

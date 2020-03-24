@@ -19,7 +19,7 @@ class Field extends Component {
     }
 
     render() {
-        const currentCard = this.state.card;
+        const card = this.state.card;
 
         return (
             <div className="container">
@@ -29,7 +29,7 @@ class Field extends Component {
                     </div>
                     <div className="col-4"></div>
                     <div className="col-4">
-                        <Card card={currentCard}/>
+                        <Card card={card}/>
                     </div>
                 </div>
             </div>
