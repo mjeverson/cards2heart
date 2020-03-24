@@ -6,18 +6,16 @@ class Card extends Component {
     }
 
     render() {
-        let card;
-        let text;
+        let cardImage;
 
         if (this.props.card){
-            card = this.props.card.cardName;
-            text = this.props.card.text;
+            let url = "/resources/images/CTTH v4 Prod Cards layout final" + this.props.card + ".png";
+            cardImage = <img src={url} alt="cardback-component" style={{ display: this.props.card ? 'block': 'none'}}/>;
         }
 
         return (
-            <div className="Card">
-                {card}<br/>
-                {text}
+            <div className="Card card-display">
+                {cardImage}
             </div>
         );
     }

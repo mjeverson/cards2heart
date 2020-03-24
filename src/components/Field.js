@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Deck from "./Deck";
+import Guide from "./Guide";
 import Card from "./Card";
 
 class Field extends Component {
@@ -27,7 +28,9 @@ class Field extends Component {
                     <div className="col-4">
                         <Deck onDraw={this.handleDraw}/>
                     </div>
-                    <div className="col-4"></div>
+                    <div className="col-4">
+                        <Guide/>
+                    </div>
                     <div className="col-4">
                         <Card card={card}/>
                     </div>
