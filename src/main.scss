@@ -1,13 +1,16 @@
 @import './styles/custom.scss';
-@import 'styles/components/App';
-@import 'styles/components/Deck';
-@import './styles/cards.scss';
+@import './styles/variables';
+@import './styles/components/App';
+@import './styles/components/Field';
+@import './styles/components/Deck';
+@import './styles/cards';
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  line-height:1.5;
+  color: $font-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,4 +18,35 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+
+h1 {
+  color: $header-color;
+  font-weight:600;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  line-height:1.2;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight:600;
+}
+
+a {
+  color: #3d4246;
+  text-decoration:none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom:1px;
+
+  &:hover {
+    opacity: 0.6;
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+footer {
+  margin-bottom:25px;
 }

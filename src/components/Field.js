@@ -20,16 +20,21 @@ class Field extends Component {
         const card = this.state.card;
 
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-2"/>
-                    <div className="col-4">
-                        <Deck onDraw={this.handleDraw}/>
+            <div className="Field">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-2"/>
+                        <div className="col-4">
+                            <Deck onDraw={this.handleDraw}/>
+                        </div>
+                        <div className="col-4">
+                            <Card card={card}/>
+                        </div>
+                        <div className="col-2"/>
                     </div>
-                    <div className="col-4">
-                        <Card card={card}/>
+                    <div className="row find-out">
+                        <span>Find out more about Cards to the Heart, download your own copy, or help support this art project by buying your own printed deck at <a href="http://cardstotheheart.ca">cardstotheheart.ca</a></span>
                     </div>
-                    <div className="col-2"/>
                 </div>
             </div>
         );
