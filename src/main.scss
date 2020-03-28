@@ -47,6 +47,18 @@ a {
   }
 }
 
+header {
+  margin-top:25px;
+  margin-bottom:25px;
+  padding-bottom:25px;
+  border-bottom: 1px solid #e8e9eb;
+  display:flex;
+
+  h1 {
+    margin-left:50px;
+  }
+}
+
 footer {
   margin-bottom:25px;
 }

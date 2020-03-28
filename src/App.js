@@ -9,10 +9,10 @@ function App() {
             <h1>
                 Cards to the Heart
             </h1>
-            <span>
-                In this time of physical isolation, please use these questions to help you stay socially connected with your loved ones
-            </span>
         </header>
+        <span>
+                In this time of physical isolation, please use these questions to help you stay socially connected with your loved ones
+        </span>
         <Field/>
         <footer>
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
