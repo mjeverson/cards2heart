@@ -7,8 +7,11 @@ function App() {
     <div className="App">
         <header>
             <h1>
-                Cards to the Heart
+                <a href="http://cardstotheheart.ca">Cards to the Heart</a>
             </h1>
+            <div className="logo">
+                <img src="/resources/C2tH_logo1.png"/>
+            </div>
         </header>
         <span>
                 In this time of physical isolation, please use these questions to help you stay socially connected with your loved ones
